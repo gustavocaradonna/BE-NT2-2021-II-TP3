@@ -5,8 +5,11 @@ import { StyleSheet, Text, View, Button } from "react-native";
 import { useState, useEffect } from "react";
 
 import { vibrate } from "./utils";
+
+//componentes creados por mi
 import Contador from "./componentes/Contador.jsx";
 import Temperatura from "./componentes/Temperatura";
+import Lista from "./componentes/Lista";
 
 export default function App() {
   return (
@@ -15,6 +18,7 @@ export default function App() {
       <Button title="Vibracion" onPress={vibrate} />
       <Temperatura />
       <Contador />
+      <Lista />
 
       <StatusBar style="auto" />
     </View>
